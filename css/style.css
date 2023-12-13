@@ -1,0 +1,181 @@
+/*----------------01.fonts----------------*/
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+/*----------------02.config-padrao----------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*----------------03.tag----------------*/
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+h1, p, .btn {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    color: #A0A3A9;
+    font-size: 0.6em;
+    font-weight: normal;
+    letter-spacing: 3.3px;
+}
+
+p {
+    width: 75%;
+    font-size: 0.7em;
+    line-height: 18px;
+}
+
+h1, h2, p {
+    margin: -2% 0 -12% 9%;
+}
+
+button {
+    border: none;
+}
+
+/*----------------04.classe----------------*/
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.elemento {
+    width: 16em;
+    height: 23.9em; 
+}
+
+.number {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    border-radius: 6px;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 0.7rem;
+    width: 80%;
+    height: 10%;
+    margin-left: 9%;
+    background: #3C7F67;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #1A4031;
+    text-decoration: none;
+  }
+
+/*----------------05.id----------------*/
+#elemento-2 {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#img-mobile {
+    display: none;
+}
+
+#title {
+    color:#1B2328;
+    width: 68%;
+    height: 24%;
+    font-size: 1.5em;
+    line-height: 25px;
+    margin-bottom: -22%;
+}
+
+#value {
+    color: #3C7F67;
+}
+
+#efeito {
+    font-size: 0.7em;
+    text-decoration: line-through;
+}
+
+#efeito, p  {
+    color: #A0A3A9;
+}
+
+#title, #value {
+    font-family: 'Fraunces', serif;
+}
+
+/*----------------06.responsive----------------*/
+
+@media (max-width: 511px) {
+
+    p {
+        width: 106%;
+        font-size: 0.8em;
+        line-height: 17px;
+        padding: 13%;
+        margin: -10% 0 -25% -3%;
+    }
+
+    img {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .elemento {
+        width: 21em;
+    }
+
+    .btn {
+        margin-top: -3%;
+        height: 13%;
+        font: 0.8em;
+    }
+
+    #img-desktop {
+        display: none;
+    }
+
+    #img-mobile {
+        display: inline;
+    }
+
+    #elemento-1 {
+        margin-top: -10%;
+        height: 14.7em;
+    }
+
+    #title {
+        color:#1B2328;
+        width: 70%;
+        height: 24%;
+    }
+
+    #elemento-2 {
+        height: 20em;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+}
